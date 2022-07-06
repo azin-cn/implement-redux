@@ -34,6 +34,9 @@ root.render(
     </StoreContext.Provider>
 );
 
+
+使用react-redux
+
 import store from "./store";
 import { Provider } from "react-redux";
 
