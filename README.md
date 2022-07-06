@@ -18,3 +18,5 @@ You may also see any lint errors in the console.
 - connect-with-store
 
 实现redux-connect函数，从依赖于业务逻辑到抽出store对象，重点理解利用函数进行组合。
+
+如果能够实现connect函数，那么理解与使用react-redux则变得非常简单。
