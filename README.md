@@ -2,17 +2,16 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## connect函数
 
 - connect
 - connect-with-store
 
 实现redux-connect函数，从依赖于业务逻辑到抽出store对象，重点理解利用函数进行组合。
 
-如果能够实现connect函数，那么理解与使用react-redux则变得非常简单。
+如果能够实现connect函数，那么理解与使用react-redux则变得非常简单。入口文件 index.js 改变 StoreContext 为 从react-redux导入的`Provider`，value={store}变为store={store}
 
-入口文件 index.js 改变 StoreContext 为 从react-redux导入的`Provider`，value={store}变为store={store}
+- 使用自定义封装
 ```js
 import store from "./store";
 import { StoreContext } from "./store/utils/context";
@@ -24,10 +23,9 @@ root.render(
       <Home />
     </StoreContext.Provider>
 );
-
-
-使用react-redux
-
+```
+- 使用react-redux
+```js
 import store from "./store";
 import { Provider } from "react-redux";
 
